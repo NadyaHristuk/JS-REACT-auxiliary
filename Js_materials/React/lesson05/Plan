@@ -1,0 +1,16 @@
+1) Simple rout
+npm install --save react-router-dom
+1.2) render witout props and with props
+2) Subrout and Rout props
+3) Dinamic rout
+
+
+<Route path='/about' component={About}/>
+
+
+
+
+
+
+
+<Route path='/contact' render={(props) =><Contact {...props} text={this.state.contactText}/>}/>
