@@ -1,0 +1,15 @@
+1) from setState Button to hooks Button
+2) inline click
+3) simple click
+4) fetch data with hooks
+4.1) inf loop
+5) Custom hooks
+6) Build app with hooks
+
+
+
+
+
+hooks methods 
+useState - change state
+useEfect - lifecycle DidMount or DidUpdate
