@@ -1,0 +1,43 @@
+// this +
+// this + constructor
+// call/apply/bind+
+// constructor new +
+// this - обэкт який викликає ф-ю
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Написати калькулятор за допомогою ф-ї конструктора. Ця ф-я створює обєкт з  методами read(), sum(), mul(), addMethod(name, function);
+Метод read() запитує в користувача числа за допомогою prompt і запамятовує їх.
+Метод read() працює до тих пір поки користувач не натисне Cancel;
+Метод sum() виводить в консоль суму всіх чисел що ввели в процесі роботи метода read().
+Метод console.log(calculator.sum()) // 15() виводить в консоль добуток всіх чисел.
+Метод addMethod(name, function) вчить калькулятор нової операції. 
+параметр name - назва нового метода
+параметр function - код нового метода.
+За допомогою метода addMethod(name, function) додати в калькулятор новий функціонад який буде знаходити різницю всіх введених цифр які отримали при використанні метода read();
+
+let calculator = new Calculator();
+
+console.log(calculator.read()); // вводимо 5 цифр (1,2,3,4,5) після цього натискаємо Cancel і метод read() зупиняє роботу
+
+console.log(calculator.sum()) // 15
+
+console.log(calculator.mul()) // 120
+
+calculator.addMethod(minus, function) // додається метод на віднімання
+
+console.log(calculator.minus()) // -13
