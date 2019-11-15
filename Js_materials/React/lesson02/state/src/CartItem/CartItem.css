@@ -1,0 +1,19 @@
+.CartItem {
+    padding: 1rem;
+    border: 2px solid #000;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.CartItem:last-child {
+    margin-bottom: 0;
+}
+
+.close__icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
