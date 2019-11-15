@@ -1,0 +1,54 @@
+input value
+checkbox value
+
+addEventListener и removeEventListener
+event.preventDefault()
+
+event.type
+event.currentTarget
+event.target
+event.stopPropagation().
+stopImmediatePropagation()
+bubling
+Делегирование
+event.preventDefault().
+DOMContentLoaded
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+mousedown
+mouseup 
+mouseover 
+mouseout 
+mousemove 
+
+//////////////////////////////////////////////////////////////////////////////
+
+click 
+contextmenu
+dblclick 
+
+///////////////////////////////////////////////////////////////////////////////
+
+clientX/clientY
+pageX/pageY
+
+//////////////////////////////////////////////////////////////////////////////
+
+keydown и keyup
+keypress
+
+focus/blur
+scroll
+
+pageXOffset
+pageYOffset
+
+elem.offsetWidth
+elem.offsetHeight
+
+elem.clientWidth
+elem.clientHeight
+
+style
