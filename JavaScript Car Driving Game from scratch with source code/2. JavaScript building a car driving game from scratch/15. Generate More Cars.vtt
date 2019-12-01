@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00.480 --> 00:02.630
+In the earlier lesson we generated lines.
+
+00:02.640 --> 00:09.170
+Now we want to generate some additional cars that we can use and output those values to the player.
+
+00:09.810 --> 00:11.040
+So we've got our lines.
+
+00:11.040 --> 00:18.600
+And when we refresh this sort of breakout of that going back into our application into our CSX we should
+
+00:18.600 --> 00:23.910
+create some cart some additional cars as well so we can just call them enemy
+
+00:27.290 --> 00:31.160
+and we're going to update the background color for them as we're generating them out.
+
+00:31.220 --> 00:35.320
+So they're going to have the same properties as our initial cars.
+
+00:35.320 --> 00:43.770
+They're the same size and they're going to have the same feel and look to those so going into our application.
+
+00:43.770 --> 00:49.280
+So just as we created some lines we should also create some additional cars.
+
+00:49.380 --> 00:54.390
+So within the start game we created our lines here.
+
+00:54.390 --> 00:59.340
+Let's take this what we did earlier and also create.
+
+00:59.340 --> 01:04.350
+So just having the player we're going to add in and add some cars as well.
+
+01:04.380 --> 01:06.470
+So we'll call them enemy.
+
+01:06.510 --> 01:12.910
+So these are divs and these are the enemy elements
+
+01:15.760 --> 01:17.450
+we certainly don't need 10.
+
+01:17.470 --> 01:25.240
+How about we do three for now and we're going to generate them to have Y to be equal to.
+
+01:25.400 --> 01:30.500
+And I won't start them off had a negative position so they're not already on the screen so have them
+
+01:30.560 --> 01:34.620
+at Y minus.
+
+01:34.730 --> 01:40.060
+And let's use a random value here for that we're going to generate.
+
+01:40.200 --> 01:45.320
+We're going to use that JavaScript math function so math
+
+01:48.620 --> 01:49.220
+so math
+
+01:52.120 --> 02:03.670
+floor math random times two hundred or two times five.
+
+02:11.280 --> 02:15.030
+And they gonna multiply it by negative 1.
+
+02:15.380 --> 02:19.610
+So it's gonna give us a random position for I of that particular element
+
+02:22.390 --> 02:25.950
+so they're all essentially gonna be off screen once we start up
+
+02:33.140 --> 02:41.190
+and add in the enemy y position there as its starting point and then add them into the game area and
+
+02:41.190 --> 02:49.560
+also going to set the background color so we can distinguish them to style and background color so we'll
+
+02:49.560 --> 02:52.030
+set them all to red for now.
+
+02:52.500 --> 02:53.730
+So they're all red.
+
+02:53.730 --> 02:55.390
+Now we need to get them moving.
+
+02:55.590 --> 03:04.020
+So just as we moved the lines we can create a function in our play game to move our enemies so move
+
+03:04.830 --> 03:10.300
+enemy and I'll copy out the function where we move the lines.
+
+03:12.200 --> 03:15.520
+And sort of move lines update that to move enemy
+
+03:18.210 --> 03:23.820
+and selecting those elements that have a class of enemy just going down to make sure.
+
+03:23.820 --> 03:28.530
+So instead of adding a class of line we need to add the class of enemy to them.
+
+03:28.530 --> 03:31.090
+Give it more of a generic object name there.
+
+03:31.140 --> 03:34.370
+So element and we can keep item there as well.
+
+03:34.470 --> 03:41.670
+And instead of subtracting fifteen hundred from it let's update this and set it to be equal to.
+
+03:41.760 --> 03:47.490
+We could also keep the subtracting of the fifteen hundred and we also need to add in the positioning
+
+03:47.520 --> 03:49.560
+of the item to the left.
+
+03:49.560 --> 03:59.760
+So adding in a style left this is we can use math floor and math random and let's multiply it by 150
+
+04:00.150 --> 04:02.850
+because we know we've got two hundred width for the road.
+
+04:02.850 --> 04:07.130
+Don't forget to add in the picks and then we've got 50 with for the width of the car.
+
+04:07.170 --> 04:13.770
+And we also need to use this down where we've generated the element so not just top we need to also
+
+04:13.770 --> 04:23.090
+specify that we are adding in left positions so they're not all within that same line and we can generate
+
+04:23.090 --> 04:24.470
+this randomly as well.
+
+04:26.520 --> 04:33.490
+So instead of having the math value here adds random so we can space it out a little bit better going
+
+04:33.740 --> 04:40.800
+to remove that and set this to X plus 1 and then multiply that by a value of six hundred.
+
+04:41.370 --> 04:47.390
+So that will space out our enemies a little bit better and we can keep the enemy x y value the same.
+
+04:48.000 --> 04:54.240
+So you can see that they've been generated and there is spacing between them and they're always randomly
+
+04:54.240 --> 04:59.880
+positioned so either on the left or the right and then that one kind of showed up a little bit unexpectedly.
+
+04:59.880 --> 05:05.250
+So we need to also take that into consideration where we're going to multiply it and we're going to
+
+05:05.250 --> 05:07.740
+subtract six hundred from it.
+
+05:07.740 --> 05:15.460
+So going up just do a quick adjustment here and we're going to set the value of y to be negative six
+
+05:15.460 --> 05:22.920
+hundred so try that out run through that one more time and now we've got some better spacing between
+
+05:22.920 --> 05:26.110
+the enemies you can see that they're always coming right off of the top.
+
+05:26.190 --> 05:30.360
+So go ahead and add this into your application and you'll be ready to move on to the next part where
+
+05:30.360 --> 05:34.070
+we're going to be doing collision detection and that's going to be wrapping up the game.
+
+05:34.140 --> 05:40.110
+We're going to check to see if this car is overlapping any one of these enemies and if it is then the
+
+05:40.110 --> 05:40.650
+game's over.

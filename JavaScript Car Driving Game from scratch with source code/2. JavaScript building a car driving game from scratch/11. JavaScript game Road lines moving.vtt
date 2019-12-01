@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00.720 --> 00:03.840
+In this lesson we're going to add in some road lines.
+
+00:03.900 --> 00:08.300
+First of all going into our CSX Let's create that line.
+
+00:08.550 --> 00:13.770
+We're going to position the line absolute just as we did with the car because it's going to sit on top
+
+00:13.770 --> 00:17.400
+of the road and background color of the line is going to be white.
+
+00:18.020 --> 00:24.330
+So now we need to add the lines into our page and move them along as the road is moving along.
+
+00:25.300 --> 00:29.960
+So we've got our car and getting rid of these console messages.
+
+00:30.010 --> 00:33.370
+So now we can focus and track on the lines themselves.
+
+00:33.370 --> 00:40.120
+And I want to have the lines moving down the center of the page so as we start the game this is where
+
+00:40.120 --> 00:45.940
+we can generate the lines and then add them dynamically onto the page.
+
+00:45.970 --> 00:52.090
+So just before we build out the car so the car can go on top of the lines we're going to build out the
+
+00:52.180 --> 00:54.390
+different lines on the page.
+
+00:54.610 --> 00:59.380
+So creating a loop setting X to zero looping while x is less than five.
+
+00:59.400 --> 01:02.240
+But we create five lines so it can break out of our loop.
+
+01:02.320 --> 01:08.440
+And then here is where we're going to create those divs using what we did before with document create
+
+01:08.890 --> 01:13.540
+element an element that we're creating as a div we're going to add a class to the div.
+
+01:13.540 --> 01:18.130
+So using that div object we can this time we can do class list to have something different.
+
+01:18.130 --> 01:24.040
+Class list add and we're adding the value of line and then we need to set a position of it.
+
+01:24.070 --> 01:27.910
+So this is the default position of we're repositioning the line.
+
+01:28.060 --> 01:35.890
+So setting that up to be and just as we added in positions here for a style top position we can do the
+
+01:35.890 --> 01:37.750
+same thing for the line.
+
+01:37.750 --> 01:39.230
+So style top.
+
+01:39.270 --> 01:47.380
+So let's set the top position to X times so we're generating out all of the different lines there and
+
+01:47.380 --> 01:49.740
+then setting them as picks.
+
+01:49.810 --> 01:55.330
+And then lastly we need to append them to our game area.
+
+01:55.330 --> 02:00.400
+So just with as we did with the car we're going to upend the line to those.
+
+02:00.430 --> 02:01.200
+So try that.
+
+02:01.420 --> 02:02.890
+So welcome message.
+
+02:03.160 --> 02:04.850
+And we get a bunch of lines there.
+
+02:05.110 --> 02:08.380
+So they're not exactly being positioned center.
+
+02:08.380 --> 02:11.680
+So we need to make sure that they are being positioned center.
+
+02:11.680 --> 02:15.560
+So going back to where we set the positioning.
+
+02:15.750 --> 02:25.110
+So instead of margin auto we'll do margin left and we know the road width is 200 picks our width is
+
+02:25.140 --> 02:26.070
+10 picks.
+
+02:26.070 --> 02:27.930
+So I'm gonna divide that in half.
+
+02:27.930 --> 02:32.820
+So that's going to give us a left margin of ninety five picks.
+
+02:32.850 --> 02:35.960
+So now we've got our lines for the road.
+
+02:36.060 --> 02:39.100
+Got five of them there need to create more you can create more as well.
+
+02:39.420 --> 02:45.930
+And we need to get them moving so the next lesson we're going to continue to build out the lines and
+
+02:45.930 --> 02:49.290
+we're going to have them moving as the game is looping.
+
+02:49.470 --> 02:54.240
+And as you guessed it we're going to place it within the animation frame where we've got the play game
+
+02:54.570 --> 03:02.650
+and this way we can select all of those elements with the class of line and update their positions.
+
+03:02.670 --> 03:08.540
+So that's still to come in the next lesson so go ahead and update add in the sea assess for the line
+
+03:09.080 --> 03:14.870
+generate them once we hit the start button and I'll show you how to get them moving in the next lesson.

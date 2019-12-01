@@ -1,0 +1,493 @@
+WEBVTT
+
+00:00.180 --> 00:01.140
+Welcome back.
+
+00:01.140 --> 00:06.480
+And in this lesson this is a final lesson of the section where we're going to do a quick code review
+
+00:06.840 --> 00:10.020
+and I'll be out an opportunity to try this game out for yourself.
+
+00:10.050 --> 00:15.260
+Build out your own version of it and always before you finalize the product.
+
+00:15.360 --> 00:22.050
+Play through it several times just to ensure that things are working as expected and as you can see
+
+00:22.230 --> 00:25.720
+I'm fairly satisfied with the way that this game what runs.
+
+00:25.860 --> 00:31.680
+And whenever I do the collision then we run and we get game over and we also get our score.
+
+00:31.680 --> 00:36.920
+So everything that we set out is in place so we can do a final code review now.
+
+00:37.110 --> 00:39.670
+First we came into this application.
+
+00:39.870 --> 00:45.860
+We added in a bit of styling to present the game in a better better style format.
+
+00:45.930 --> 00:50.010
+So that was all of this was just typical CSF styling.
+
+00:50.100 --> 00:57.600
+And this isn't this isn't necessary for the gameplay as you know that we started the original cars were
+
+00:57.600 --> 01:01.620
+just squares and then we've been updating them throughout the gameplay.
+
+01:01.620 --> 01:08.260
+So again this is optional and you can make your own version of how these cars look coming into the H2
+
+01:08.280 --> 01:08.980
+AML.
+
+01:09.000 --> 01:13.530
+We didn't have a whole lot of HD Himmel we tried to keep it to a minimal and tried to do as much as
+
+01:13.530 --> 01:17.680
+possible with JavaScript so we set up an element for score.
+
+01:17.730 --> 01:22.590
+We set up element for our game and then we had two different screens.
+
+01:22.590 --> 01:29.100
+So we've got our start screen which is this red box here which gives us some instructions and also tells
+
+01:29.100 --> 01:32.030
+the player what to do and how to start the game.
+
+01:32.130 --> 01:33.930
+And then we have our main game area.
+
+01:33.930 --> 01:41.040
+So this is where all of the magic happens and how we generate out all of our content within our javascript.
+
+01:41.040 --> 01:48.210
+We came into the javascript creating some objects that connected to the elements to our H2 metal elements.
+
+01:48.210 --> 01:54.390
+So that made it really easy to connect to those and attach all of the different functionality that we
+
+01:54.390 --> 01:54.930
+needed.
+
+01:54.930 --> 02:00.630
+And the interactive and dynamic content we also needed to setup a few objects.
+
+02:00.630 --> 02:04.530
+So we've got one for the player which tracks the speed and the score.
+
+02:04.530 --> 02:11.070
+We can also add in other values if needed because it is an object and using objects keeps it nice and
+
+02:11.070 --> 02:17.730
+neat within one package so that you can really easily access it and it makes a lot more sense when you're
+
+02:17.970 --> 02:19.400
+adding it into the code.
+
+02:19.470 --> 02:21.480
+Also for the keys.
+
+02:21.540 --> 02:28.860
+So we generated another object for the Keys by default we set them all to false and these were all of
+
+02:28.860 --> 02:35.310
+the four different keys that we're tracking so we wanted movement for up down right and left.
+
+02:35.310 --> 02:41.430
+So we need to also track those if they've been pressed and if they've been released and take the appropriate
+
+02:41.430 --> 02:46.610
+function within our gameplay for that we needed to add in a few event listeners.
+
+02:46.620 --> 02:51.960
+So one of the event listeners that we added in we wanted a quick start in order to start the game so
+
+02:51.960 --> 02:57.360
+that adds that functionality to that start screen as well as for the keys.
+
+02:57.360 --> 02:59.290
+We needed two functions.
+
+02:59.400 --> 03:05.580
+We needed one function that tracks when the player presses A key down another one when the player presses
+
+03:05.580 --> 03:09.750
+A key up and going into our object.
+
+03:09.750 --> 03:15.040
+We set up those keys tracking what the keys were set as.
+
+03:15.090 --> 03:24.540
+So if we set the keys with the key value to true we could also set them to false afterwards as well.
+
+03:24.540 --> 03:28.930
+We also tracked the console log putting the key values.
+
+03:28.930 --> 03:34.810
+So this is actually not necessary for a finalized gameplay so we can remove that at this point.
+
+03:34.830 --> 03:41.580
+So going into the key object we're able to track which keys are pressed up and down then going into
+
+03:41.580 --> 03:42.970
+our game play.
+
+03:42.990 --> 03:45.410
+We were tracking our gameplay.
+
+03:45.420 --> 03:52.010
+So we have our Start button which kicks off the game and starts the Nisshin ization of the game.
+
+03:52.020 --> 03:56.970
+So that was our start function where we need to hide the start screen.
+
+03:57.210 --> 03:58.710
+We need to clear out the game area.
+
+03:58.740 --> 04:02.100
+So in case this is a restart we need to clear that out.
+
+04:02.130 --> 04:05.940
+We also reset those values to true and to zero.
+
+04:06.000 --> 04:11.070
+So the players start value is the one that's going to control all of the functionality.
+
+04:11.070 --> 04:14.100
+So if this is true that's when the game is playing.
+
+04:14.100 --> 04:18.890
+If it's false then we're not going to play the game the game stops in and play.
+
+04:18.990 --> 04:21.830
+And basically it stops the animation screen.
+
+04:21.870 --> 04:30.120
+We also needed to generate the lines for our background so we went and we let generated 10 lines for
+
+04:30.120 --> 04:32.140
+our road to make it look more like a road.
+
+04:32.160 --> 04:39.180
+Of course we also initiated our play game request animation frame.
+
+04:39.450 --> 04:40.980
+And this is going into a loop.
+
+04:41.010 --> 04:43.050
+So we'll take a look at that as well.
+
+04:43.050 --> 04:45.030
+We generated our car.
+
+04:45.030 --> 04:48.300
+So it's the white car they're creating and elements.
+
+04:48.310 --> 04:55.050
+That was a div set an attribute of car so connected it to the class of car that gave us the styling
+
+04:55.050 --> 04:56.600
+and the image and so on.
+
+04:56.760 --> 05:01.980
+And the basic width height and position of the within the game area.
+
+05:02.080 --> 05:04.610
+Then we added in the car on the game area.
+
+05:04.630 --> 05:09.540
+So that gives us the ability to add it into the each team all of the objects.
+
+05:09.540 --> 05:11.300
+So see there there's our car.
+
+05:11.470 --> 05:16.630
+We've generated that these are all the lines that we generated and the top positions of those lines.
+
+05:16.630 --> 05:22.390
+And as you can see that once we start running the application then these line values are going to be
+
+05:22.390 --> 05:24.550
+changing dynamically.
+
+05:24.550 --> 05:26.560
+We also have our enemies.
+
+05:26.560 --> 05:28.810
+So we generated three of them.
+
+05:28.810 --> 05:36.400
+And this again was a generation of particularly the div and we had to set some properties into the div.
+
+05:36.400 --> 05:40.690
+So those are within the styles there that you see that that's how we're actually moving the element
+
+05:40.990 --> 05:44.260
+by adjusting the style we create a random color for it.
+
+05:44.380 --> 05:49.210
+And then once we've created it we append it to the game area and you can see the enemies are generated
+
+05:49.210 --> 05:49.780
+down there.
+
+05:49.840 --> 05:55.720
+So they all have different top starting positions and they also different background colors and generating
+
+05:55.720 --> 06:01.780
+the random colors we create a function that generates a random hex value and we can see that again within
+
+06:01.780 --> 06:05.600
+the style that these are just random color values that are generated.
+
+06:05.650 --> 06:11.290
+So the meat action of this game takes place within the request animation frame where we're calling the
+
+06:11.290 --> 06:12.740
+play game function.
+
+06:12.820 --> 06:18.610
+So going over to play game this is where all the movement of our application happens.
+
+06:18.670 --> 06:25.720
+So first we were getting the car element so selecting that element with a class of car so that we could
+
+06:25.720 --> 06:31.750
+select that one that we've generated within that game area and then we had a couple of functions one
+
+06:31.750 --> 06:35.320
+for moving the background lines another one for moving the enemy.
+
+06:35.350 --> 06:41.830
+So take a look at those in a bit we got the road bounding area.
+
+06:41.830 --> 06:45.460
+So that was so that we could use that for top and bottom.
+
+06:45.520 --> 06:50.470
+We could have also generated these values as well for the road the top and the bottom.
+
+06:50.470 --> 06:53.850
+So this was an absolutely 100 percent necessary that we use.
+
+06:53.860 --> 06:58.790
+They get bounding client rectangle but we were using it within the collision detection.
+
+06:58.840 --> 07:05.650
+So it was a good practice exercise to start using and understanding what values we can get from this
+
+07:05.860 --> 07:11.950
+javascript function down here is where we're checking to see if the player start is functioning and
+
+07:11.950 --> 07:20.020
+if it is then we attach with the arrow keys what's going to happen using an updating value that's contained
+
+07:20.080 --> 07:21.970
+within that element object.
+
+07:22.060 --> 07:29.020
+So a Y and an X and then taking those x and y values and this is where we were updating the style in
+
+07:29.020 --> 07:34.930
+order to match it with whatever the x and y position was because it's a lot easier to update the x and
+
+07:34.930 --> 07:40.930
+y position we could of course have calculated moving the left and top but then we'd have to do it multiple
+
+07:40.930 --> 07:41.560
+times.
+
+07:41.560 --> 07:43.450
+So this way was a little bit cleaner.
+
+07:43.480 --> 07:49.060
+Next we re initiate the request animation frame and re initiate that play game.
+
+07:49.060 --> 07:55.210
+So it's going to continuously loop and run all of that function and then we've also updating our score
+
+07:55.300 --> 07:59.950
+as we're moving through and also updating the inter inter text of the score.
+
+08:00.010 --> 08:05.140
+So the player can see the score increasing and then all we're doing is going back to that play game.
+
+08:05.260 --> 08:07.570
+And this is where all the functionality takes place.
+
+08:07.570 --> 08:10.090
+We've got our move lines move enemy.
+
+08:10.090 --> 08:13.240
+So those functions are sitting over here.
+
+08:13.240 --> 08:19.270
+So we've got our move enemy and we're passing in that car element object because we need to make a collision
+
+08:19.270 --> 08:20.260
+detection.
+
+08:20.260 --> 08:27.910
+So instead of selecting it and use using it again with document query selector we just simply passed
+
+08:27.910 --> 08:32.790
+it in then we were grabbing all of the elements with a class of enemy.
+
+08:32.860 --> 08:37.000
+So let's mix it dynamics if we had more enemies we could grab all of them.
+
+08:37.000 --> 08:43.150
+We loop through each one of those and we check to see if there's a collision and if there is then we
+
+08:43.150 --> 08:44.160
+end the game.
+
+08:44.230 --> 08:48.880
+Otherwise we just we just continue with the movement of those cars.
+
+08:48.880 --> 08:54.430
+And another thing too that we're checking to see if the car has run off of the screen and if it has
+
+08:54.660 --> 09:00.400
+then we reset it to negative 600 and we also reset the left position and we reset the background color
+
+09:00.730 --> 09:08.230
+so it can look have a different background color and we can also have a different left position and
+
+09:08.260 --> 09:10.830
+then after all of these conditions.
+
+09:10.840 --> 09:18.220
+So if these conditions are not true then we skip directly through updating the y position of that element
+
+09:18.610 --> 09:25.300
+and that means that we're updating the style and the top position just as we were with the players car.
+
+09:25.300 --> 09:28.810
+The other one that we're doing is that we're updating and moving the lines.
+
+09:28.810 --> 09:31.020
+So this one wasn't as complex.
+
+09:31.030 --> 09:36.100
+We're still doing the same thing where we're using query selector to select all the lines and looping
+
+09:36.100 --> 09:43.450
+through all of the lines within the node list we needed to check to see if the value of y was off the
+
+09:43.450 --> 09:48.510
+screen greater than fifteen hundred and if it was then we're subtracting fifteen hundred from it.
+
+09:48.610 --> 09:52.710
+And this keeps the lines within the same distance apart.
+
+09:53.200 --> 09:56.960
+So instead of setting a value we're subtracting the fifteen hundred.
+
+09:56.980 --> 10:03.790
+So if we had 15 15 we would still end up with negative subtracted off of there.
+
+10:03.790 --> 10:09.610
+So we'd still end up with a value that we could utilize and we would still have the same distance between
+
+10:09.610 --> 10:15.130
+the lines also increasing the player speed as by the player speed.
+
+10:15.130 --> 10:20.260
+So this can be dynamic as well so we can increase the player speed speed and it will increase the way
+
+10:20.260 --> 10:22.320
+the lines move as well as the enemies.
+
+10:22.390 --> 10:28.040
+And we also had our item I style that we were updating as well.
+
+10:28.060 --> 10:32.950
+Now one of the most important functions of this game was the collision detection which we're using within
+
+10:32.950 --> 10:39.190
+the move enemy where we're taking the enemy object as well as the player object which is the car.
+
+10:39.190 --> 10:44.770
+And then the enemy object and checking to see if there's overlap between the elements on the page and
+
+10:44.770 --> 10:51.550
+we're using that get bounding client rectangle method in order to get the top left right and bottom
+
+10:51.550 --> 10:59.260
+positions and then we were looking and comparing to see if the horizontal or the vertical top and bottom
+
+10:59.560 --> 11:00.590
+are overlapping.
+
+11:00.670 --> 11:01.960
+And again the opposite.
+
+11:01.960 --> 11:04.480
+So the top and the bottom of the opposite ones.
+
+11:04.630 --> 11:08.900
+And if there's overlap there then we know that there's a possible collision.
+
+11:09.100 --> 11:12.820
+And if this one is as well.
+
+11:12.820 --> 11:17.530
+Possible collision and this one as well if it's a possible collision.
+
+11:17.530 --> 11:22.090
+So taking all of these into consideration notice that these are orbs.
+
+11:22.120 --> 11:28.660
+So if any of these are overlapping then we know that we've got some type of overlap and we need to take
+
+11:28.660 --> 11:33.000
+this into consideration as we returned back that value.
+
+11:33.100 --> 11:38.200
+And this is all contained within one statement here.
+
+11:38.320 --> 11:47.650
+And if there is any overlap then by default where toggling that value from false to true and returning
+
+11:47.650 --> 11:52.930
+back at value of true and that means that we do have a collision between the elements and then we do
+
+11:52.930 --> 12:00.220
+the end game functionality essentially that was really the core of what we're doing the end game was
+
+12:00.220 --> 12:06.730
+relatively straightforward where we have the player start functions so we set that to false so we can
+
+12:06.730 --> 12:09.430
+stop running that animation screen.
+
+12:09.430 --> 12:16.150
+We output the score for the player so they can see what the score is and we also write game over and
+
+12:16.150 --> 12:22.390
+then we also have our start screen where we're showing that start screen button again so the player
+
+12:22.390 --> 12:28.090
+can restart the game and we needed to make sure as well that when we're restarting the game that we're
+
+12:28.090 --> 12:33.370
+clearing everything out and we're preparing a brand new game again for the play.
+
+12:33.520 --> 12:36.060
+So go ahead and try this out for yourself.
+
+12:36.060 --> 12:42.520
+All of the source code is also included so you can copy paste it try it out experiment with it and get
+
+12:42.520 --> 12:47.080
+familiar with the content that we've covered in the previous lessons.
+
+12:47.080 --> 12:49.980
+Thanks again for taking this section of the course.

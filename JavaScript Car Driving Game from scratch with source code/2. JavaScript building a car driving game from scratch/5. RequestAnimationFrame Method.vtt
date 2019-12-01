@@ -1,0 +1,256 @@
+WEBVTT
+
+00:00.330 --> 00:05.370
+This lesson we're gonna be looking at a javascript method called request animation frame and what this
+
+00:05.370 --> 00:11.670
+is going to do is this is going to allow us to have a method that allows our browser to understand that
+
+00:11.670 --> 00:13.560
+we've got an animation frame.
+
+00:13.620 --> 00:19.560
+Essentially what that does is it allows you to loop through multiple times within that same function.
+
+00:19.740 --> 00:24.480
+And the way that it works we've got an example here on the module the developer network they've got
+
+00:24.510 --> 00:26.580
+start to equal to no.
+
+00:26.670 --> 00:31.310
+Then we've got our element there so whatever that element is that we want to animate.
+
+00:31.410 --> 00:35.740
+It's making a selection from the HD Himmel and then using timestamp.
+
+00:35.790 --> 00:42.750
+So down below it initiates that function window request animation frame and we know with Windows methods
+
+00:42.930 --> 00:46.900
+we don't need to specify window but it's always a good idea to do that anyway.
+
+00:46.920 --> 00:52.410
+So sometimes you might see the request animation frame with the window prefects seeing it and that's
+
+00:52.410 --> 00:53.430
+okay as well.
+
+00:53.460 --> 00:59.070
+And in this case we are going to be using window request animation frame to request our animation frame
+
+00:59.430 --> 01:04.620
+and what it does is it invokes the function and the function that's going to invoke is going to be over
+
+01:04.620 --> 01:05.220
+here.
+
+01:05.370 --> 01:07.860
+We've got it running on a timestamp.
+
+01:07.890 --> 01:13.800
+So in this particular example it's going to be moving that element around and depending on how far this
+
+01:13.890 --> 01:22.020
+progress is and tracking the current timestamp and the value minus start it's going to be transforming
+
+01:22.020 --> 01:23.660
+that particular element.
+
+01:23.670 --> 01:28.770
+So this is a really neat example and you can go ahead and you can try this out for yourself and we're
+
+01:28.770 --> 01:36.510
+going to bring the request animation frame into our application and added into our application making
+
+01:36.600 --> 01:37.920
+animations happen.
+
+01:38.310 --> 01:43.380
+So setting up a brand new function and then this is the function where all the magic is going to happen.
+
+01:43.470 --> 01:49.040
+We're going to call this play game and this is the function that we're going to request.
+
+01:49.040 --> 01:54.090
+So with the console log in play and once we hit that start button.
+
+01:54.090 --> 01:57.000
+So we've got the start function we want.
+
+01:57.000 --> 02:00.650
+This is where we want to invoke the request animation frame.
+
+02:00.750 --> 02:07.820
+So using the window object and then request animation frame while we need to do is specify what the
+
+02:07.820 --> 02:14.330
+function is that we want to request and the function that we want to request is the play game function.
+
+02:14.340 --> 02:15.630
+So now let's see what happens.
+
+02:15.630 --> 02:18.310
+So we hit start and we have in play.
+
+02:18.390 --> 02:21.310
+So it's not exactly looping quite yet.
+
+02:21.480 --> 02:27.360
+And you see that what's happening here is that within the animation frame they're requesting that animation
+
+02:27.360 --> 02:28.380
+frame again.
+
+02:28.380 --> 02:31.650
+And that's what actually creates the loop of the animation.
+
+02:31.650 --> 02:38.190
+So just as any function that we're invoking within itself it's going to constantly loop and create additional
+
+02:38.190 --> 02:39.430
+animation frames.
+
+02:39.450 --> 02:44.150
+So we've only got one animation frame that we're animating right now.
+
+02:44.280 --> 02:48.760
+And now we're going to invoke that same function within itself.
+
+02:48.840 --> 02:53.880
+And what that's going to do when we go back out here and we started we see that we've got an animation
+
+02:53.880 --> 02:54.930
+happening.
+
+02:54.930 --> 03:00.240
+So now we can also check to see that if the game is in play.
+
+03:00.870 --> 03:04.010
+So let's set up a variable we'll call it player.
+
+03:04.080 --> 03:05.970
+So this is going to be a blank object.
+
+03:06.000 --> 03:12.470
+And once we start the game that we're going to take our player object set start to true and then in
+
+03:12.470 --> 03:18.000
+our animation frame we're going to take our player object start and we're gonna make sure that that
+
+03:18.000 --> 03:18.500
+is true.
+
+03:18.510 --> 03:24.690
+So we're not going to do anything unless the game is actually started and in play and we're not going
+
+03:24.690 --> 03:31.050
+to request any additional animations or anything unless this function is true and really at the end
+
+03:31.050 --> 03:36.030
+of the day it's not going to make much difference because we are setting the player start to be equal
+
+03:36.030 --> 03:39.160
+to true before we're calling the play game.
+
+03:39.240 --> 03:42.560
+And that's why we don't see any difference quite yet.
+
+03:42.600 --> 03:49.230
+So now that we've got that in play the next part of this is to add in that animation and make something
+
+03:49.290 --> 03:49.970
+move.
+
+03:49.980 --> 03:56.760
+So what we need to do is we need to create an element that we can access and we can move around our
+
+03:56.820 --> 03:57.810
+screen.
+
+03:57.810 --> 04:02.880
+So going into our game area this is where we want to place that particular element.
+
+04:02.880 --> 04:08.880
+So we've got the game area object that we created earlier and we're going to use javascript to generate
+
+04:09.000 --> 04:11.140
+our car or our vehicles.
+
+04:11.140 --> 04:18.450
+So setting up a variable we can call it the car and document creating an element.
+
+04:18.480 --> 04:24.600
+So in this case we're creating an element an element that we're going to create is a div and then adding
+
+04:24.600 --> 04:34.110
+into a car to update the inner text and for now I guess it's just going to say car inside of it.
+
+04:34.850 --> 04:42.980
+And then using that game area object we're going to append a child to it and the child that we're appending
+
+04:43.040 --> 04:44.320
+is the car.
+
+04:44.330 --> 04:46.440
+We're appending a child and we wait.
+
+04:46.520 --> 04:52.120
+And currently right now we still have the class of display none being shown.
+
+04:52.160 --> 04:54.500
+And we need to hide the start screen.
+
+04:54.500 --> 04:58.160
+So that's the next function that we need to do as well within the start area.
+
+04:58.160 --> 05:01.910
+So once we start the game we can get rid of the console message.
+
+05:01.910 --> 05:04.710
+Now because we're not going to have that in use anymore.
+
+05:04.850 --> 05:12.540
+So taking the start screen selecting class list we're going to remove a class from it and the class
+
+05:12.540 --> 05:21.430
+that we're moving is hide and also will want to do for game area is we're going to select a class list.
+
+05:21.500 --> 05:25.670
+And in this case we're going to add the class of height.
+
+05:25.850 --> 05:28.140
+And actually I just got that opposite.
+
+05:28.160 --> 05:35.270
+So we want to add height to the start screen and we want to remove hide from our game area.
+
+05:35.270 --> 05:36.820
+So let's try that one more time.
+
+05:36.830 --> 05:39.230
+So now we've got that element that we've created.
+
+05:39.320 --> 05:42.680
+You can take a look at it and this is the one that we're actually going to be moving around.
+
+05:42.710 --> 05:46.370
+So that is still yet to come in the upcoming lessons.
+
+05:46.460 --> 05:47.540
+So show you how to do that.
+
+05:47.540 --> 05:51.070
+How we're gonna make car that element that we created.
+
+05:51.200 --> 05:57.470
+Move depending on the arrow keys that's still to come coming let's try out request animation frame added
+
+05:57.470 --> 05:59.060
+into your project.
+
+05:59.060 --> 06:04.910
+So when the game starts you've got an animation that's playing and you've got a function that's handling
+
+06:05.150 --> 06:06.050
+all of the gameplay.

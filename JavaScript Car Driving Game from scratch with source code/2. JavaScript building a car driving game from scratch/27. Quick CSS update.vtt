@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00.210 --> 00:05.100
+This lesson we're gonna do a quick C assess update on the start screen to make it more effective and
+
+00:05.100 --> 00:11.010
+look a little bit better as right now it's kind of in line there and it's pushing down where the road
+
+00:11.010 --> 00:13.020
+is so it doesn't look the best.
+
+00:13.290 --> 00:19.590
+So if we use a position absolute we can float it above the road again using a background color so we
+
+00:19.590 --> 00:22.460
+need to wait to kind of stand out so we'll make it red.
+
+00:22.470 --> 00:27.660
+I'm going to update the width to be 50 percent so that's dynamic there.
+
+00:27.810 --> 00:34.630
+So that way when I do a margin or a left position I can use 25 percent left.
+
+00:34.740 --> 00:42.400
+And also we can set a top so we can set a default top of 100 a color for the font so that two white
+
+00:42.660 --> 00:48.150
+and we're going to also need to use z index to make sure that it's actually going to show up on top
+
+00:48.150 --> 00:48.880
+of the road.
+
+00:48.930 --> 00:50.840
+So let's see what that looks like.
+
+00:50.940 --> 00:54.660
+And now when we hit start and we generated again.
+
+00:54.660 --> 00:59.940
+So now it's just popping up on top and this looks quite a bit more effective and much better.
+
+00:59.940 --> 01:03.720
+You can also update the font family if you wanted to as well.
+
+01:03.780 --> 01:07.330
+So if you would do something a little bit more interesting so try that one more time.
+
+01:07.380 --> 01:09.210
+It stands out a little bit more as well.
+
+01:09.210 --> 01:15.360
+Press here to start and arrow keys to move if you hit a red car you will lose.
+
+01:15.360 --> 01:17.770
+So we need to update that because we updated the color.
+
+01:17.820 --> 01:21.570
+So if you hit another car you will lose.
+
+01:21.570 --> 01:24.000
+So this was just a quick lesson to fine tune it.
+
+01:24.000 --> 01:29.760
+And of course you can style it and color it and update it as needed.
+
+01:29.760 --> 01:35.650
+I'm also going to decrease the size of the fonts so do a one point seven.
+
+01:35.790 --> 01:39.750
+And also so that we can do a line height.
+
+01:39.750 --> 01:46.600
+So this will affect where the positioning of the Linus and adjust it slightly.
+
+01:46.620 --> 01:48.090
+So make it thirty five.
+
+01:48.120 --> 01:52.000
+I'm trying to move the numbers more centered on top of the car.
+
+01:52.110 --> 01:54.830
+And as you can see that's a little bit more centered.
+
+01:54.870 --> 01:58.170
+We can move them down slightly as well to maybe 38.
+
+01:58.450 --> 02:03.860
+So now we've got the numbers showing up on top of the car and that's actually where we wanted to.
+
+02:03.930 --> 02:09.060
+So a few minor adjustments have some fun with that play around with the C assess to make a game look
+
+02:09.060 --> 02:10.510
+fantastic.
+
+02:10.620 --> 02:12.510
+So coming up next we're going to do the code review.

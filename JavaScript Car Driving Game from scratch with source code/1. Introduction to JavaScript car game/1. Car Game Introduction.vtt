@@ -1,0 +1,88 @@
+WEBVTT
+
+00:01.200 --> 00:05.930
+Welcome to our javascript course where I've got a really exciting project for you.
+
+00:05.940 --> 00:09.320
+We're going to be building out a card game from scratch.
+
+00:09.330 --> 00:14.960
+This is a sample of the game that we're going to be building where you've got to avoid the other cars.
+
+00:15.030 --> 00:16.480
+Otherwise your game is over.
+
+00:16.500 --> 00:20.830
+So try to score as much as possible without hitting any of the other cars.
+
+00:20.850 --> 00:25.260
+A lot of the content that we're going to be building out is going to be generated via javascript.
+
+00:25.260 --> 00:30.540
+My name is Lawrence and I'm going to be instructor for this course and one of the main things that students
+
+00:30.600 --> 00:37.140
+often ask me is that they want to have a really interesting project in order to practice their javascript
+
+00:37.140 --> 00:37.880
+skills.
+
+00:37.890 --> 00:43.530
+This is what I've created for you in the upcoming lessons and I do encourage you to work alongside the
+
+00:43.530 --> 00:49.410
+lessons of the course try the code out for yourself to really get familiar with the functionality that's
+
+00:49.410 --> 00:55.200
+available in the upcoming lessons we are going to be covering how to generate and create elements on
+
+00:55.200 --> 00:55.900
+the fly.
+
+00:56.010 --> 00:59.400
+Also how to create and listen for event listeners.
+
+00:59.400 --> 01:06.540
+So moving different elements over anywhere within the page using JavaScript and listening for a key
+
+01:06.540 --> 01:07.090
+process.
+
+01:07.090 --> 01:12.690
+So right now impressing the different keys and pressing the arrow keys on my computer and that's giving
+
+01:12.690 --> 01:15.540
+the ability to move car element the white one.
+
+01:15.540 --> 01:21.600
+Another important part of what we're going to be showing you is how to create and check for collision.
+
+01:21.660 --> 01:26.550
+So almost any game that you're creating socially if it's these visual ones that there's interaction
+
+01:26.820 --> 01:30.870
+you need to check to see if there's collision between two different elements.
+
+01:30.900 --> 01:35.250
+So that's going to be a key component of what we're going to be generating and how we're going to be
+
+01:35.250 --> 01:41.640
+playing this game that it is checking to see if there's collision between the elements on the screen
+
+01:41.820 --> 01:44.050
+and if there is then the game is over.
+
+01:44.100 --> 01:50.850
+We're also going to be looking at how we can apply our animation screen in order to continuously loop
+
+01:50.850 --> 01:56.060
+through the functionality as well as create a smooth animation of movement.
+
+01:56.310 --> 01:59.960
+So all of this and a whole lot more is included in the course.
+
+01:59.970 --> 02:04.950
+So I know you're excited to get started so let's dive right in and start building out this application
+
+02:05.010 --> 02:05.970
+from scratch.

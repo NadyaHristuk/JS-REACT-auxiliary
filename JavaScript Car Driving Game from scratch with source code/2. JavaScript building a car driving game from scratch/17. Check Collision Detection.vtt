@@ -1,0 +1,163 @@
+WEBVTT
+
+00:01.400 --> 00:04.960
+So far we've built out the basic structure of our game.
+
+00:04.970 --> 00:10.670
+We've got some enemies there and we need people to check to see if collisions are happening between
+
+00:10.670 --> 00:12.670
+the different elements on the page.
+
+00:12.680 --> 00:17.720
+I'm going to remove out all of the console messages so save that so we don't have an overwhelming number
+
+00:17.720 --> 00:23.480
+of console messages and we just want to simply detect if there's a collision taking place between the
+
+00:23.480 --> 00:24.650
+two elements.
+
+00:24.650 --> 00:31.040
+So the enemies and the current car creating a function we're gonna create a function to check to see
+
+00:31.070 --> 00:32.880
+if it's collided.
+
+00:32.930 --> 00:41.780
+Call it is collide and we're checking to see element a versus element B first selecting our bounding
+
+00:41.780 --> 00:48.560
+client rectangle of eight using the same function that we used earlier where we get the bounding client
+
+00:48.560 --> 00:54.250
+rectangle that will give us all of the parameters that we need in order to detect that collision.
+
+00:54.320 --> 01:02.480
+And next we can do rectangle and set that to the same thing where we're getting the bounding client
+
+01:02.480 --> 01:05.100
+rectangle method.
+
+01:05.100 --> 01:12.600
+So now we've got the overall top position bottom position right left position and we need to make a
+
+01:12.900 --> 01:15.410
+determination if there's any overlap.
+
+01:16.020 --> 01:23.970
+So we're returning a value and we're checking to see if the overlap is positive and if it is then we're
+
+01:23.970 --> 01:28.950
+gonna be returning back a value of false but we want to show a value of true.
+
+01:28.950 --> 01:34.380
+So checking to see and that's why we've got that negative there to negate the pause that true and turn
+
+01:34.380 --> 01:36.690
+it into a false value.
+
+01:36.690 --> 01:40.220
+If there's no collision and if there is a collision then we're going to return back true.
+
+01:40.290 --> 01:42.130
+We need to check all of the corners.
+
+01:42.180 --> 01:51.000
+So taking a rectangle and the bottom corner we're gonna check to see if the value of a rectangle bottom
+
+01:51.300 --> 01:56.970
+is less than the value of b rectangle top.
+
+01:57.530 --> 02:04.230
+So it's going to check the top corner of rectangle B bottom corner of rectangle a and so we know that
+
+02:04.350 --> 02:13.980
+if those are matching we also want to check to see if there's an overlap rectangle top.
+
+02:14.430 --> 02:22.470
+And if it's greater than B rectangle bottom so that's going to take the other corners the opposite corners
+
+02:22.800 --> 02:26.430
+and check those the other condition that we're checking.
+
+02:26.430 --> 02:32.420
+So we need to check the left and right position so check in the top and bottom values to see if there's
+
+02:32.430 --> 02:33.760
+any overlap.
+
+02:33.810 --> 02:38.430
+And next we're checking that a rectangle right position.
+
+02:38.430 --> 02:41.470
+And this is the opposite of the top and bottom.
+
+02:41.520 --> 02:50.220
+We're gonna do the horizontal positioning and checking to see if it's less than B rectangle left.
+
+02:50.250 --> 02:55.560
+So see if there's any overlap there and then there's one last value that we need to check to see if
+
+02:55.560 --> 02:56.540
+there's any overlap.
+
+02:57.060 --> 03:05.730
+So we need to check to see if rectangle A's left side is overlapping rectangle B's right side.
+
+03:05.730 --> 03:12.730
+So try that out and we need to send over those values and we can do that as we're moving the enemy.
+
+03:12.960 --> 03:19.230
+So we're looping through all of those enemies and we can also get the car value that's available here.
+
+03:19.260 --> 03:23.100
+So passing in the car objects would have to select it again.
+
+03:23.100 --> 03:28.200
+We're gonna take that car value and make use of it within our loop here.
+
+03:28.920 --> 03:38.070
+So passing over those values we're going gonna check to see if car and if item and if they are colliding
+
+03:38.220 --> 03:40.090
+then we're going to output in the console.
+
+03:40.170 --> 03:45.210
+So we see that once they're overlapping we get a hit displayed in our console.
+
+03:45.210 --> 03:47.190
+And if there's no overlap then we don't get anything.
+
+03:47.280 --> 03:51.420
+So now we know that we are able to detect the collision and this is the collision on each and every
+
+03:51.420 --> 03:52.350
+one of the enemies.
+
+03:52.350 --> 03:54.270
+That actually doesn't matter which one we're hitting.
+
+03:54.270 --> 03:59.340
+We're always getting that collision because we do have that bounding box for the car.
+
+03:59.340 --> 04:01.900
+And we also have the bounding box for the eye.
+
+04:02.040 --> 04:06.570
+So once we have a collision then that's where we need to stop the game and show the player that the
+
+04:06.570 --> 04:09.980
+game has been stopped and that they've hit and made a collision.
+
+04:09.990 --> 04:11.820
+So coming up next show you how to do that.
+
+04:12.060 --> 04:19.830
+So go ahead and add in the collision detection into your application using the get bounding client rectangle
+
+04:20.130 --> 04:27.690
+and checking the horizontal as well as checking the horizontal as well as the vertical top and bottom
+
+04:27.690 --> 04:31.200
+positions of both of those elements on the page.

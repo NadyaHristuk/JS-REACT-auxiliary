@@ -1,0 +1,241 @@
+WEBVTT
+
+00:00.360 --> 00:01.130
+Welcome back.
+
+00:01.130 --> 00:03.560
+And this is the lesson you've all been waiting for.
+
+00:03.570 --> 00:08.820
+Where we're going to make some out something happen on screen we're going to take our car that we're
+
+00:08.820 --> 00:13.320
+creating that div that we've just created and we're gonna move it around on the screen so the few things
+
+00:13.320 --> 00:18.110
+that we need to add and prepare for adding it in as a position absolute.
+
+00:18.180 --> 00:26.010
+So of course with CSX position absolute gives us the ability to provide left top coordinates for the
+
+00:26.010 --> 00:28.170
+positioning of an element.
+
+00:28.170 --> 00:30.410
+We can also position it from bottom.
+
+00:30.420 --> 00:31.650
+So do that.
+
+00:31.650 --> 00:39.590
+And for now we're going to set bottom to be 100 pix and we'll also position our left position.
+
+00:39.750 --> 00:43.640
+So our left position by default will be 200 picks.
+
+00:43.830 --> 00:48.900
+Also going to take the opportunity to set a width of this particular element.
+
+00:48.900 --> 00:56.550
+So setting the width of the element to be and setting the height of the element to be 150 picks.
+
+00:56.730 --> 00:58.230
+Also background color.
+
+00:58.230 --> 01:00.440
+So what's on adding in content here.
+
+01:00.510 --> 01:04.530
+So we'll have our little blue car and I think I'm actually going to make this a little bit smaller.
+
+01:05.070 --> 01:10.590
+And now next what we want to do is add that class into the element that we just created.
+
+01:10.590 --> 01:14.490
+So where we've got our car that we created in the last lesson.
+
+01:14.490 --> 01:18.740
+This is a car object of the div that we're creating dynamically.
+
+01:18.780 --> 01:24.300
+We're going to use set attribute an attribute that we're setting is a class so you can do this.
+
+01:24.300 --> 01:29.910
+If you don't have any classes already added to that element you can just set a default class in the
+
+01:29.910 --> 01:32.970
+class setting and be setting is car the one that we just created.
+
+01:33.000 --> 01:33.660
+Let's try that.
+
+01:34.030 --> 01:41.180
+So there's our blue dot or blue square and we want to ultimately now move that around the page.
+
+01:41.370 --> 01:44.460
+So see that that's fairly long and big car.
+
+01:44.460 --> 01:49.290
+I'm going to make this smaller because I do have the screen zoomed in so I can zoom out a little bit
+
+01:49.290 --> 01:52.670
+on the screen so that it's a little bit more manageable.
+
+01:52.710 --> 01:57.100
+And while that is a long car so don't want to make it a limo or anything like that.
+
+01:57.180 --> 01:59.360
+So I'm going to shorten that a little bit.
+
+01:59.370 --> 02:05.910
+There's our car and we want to move this element around depending on what keys are being pressed and
+
+02:05.910 --> 02:11.010
+where did he have the play game function operating that we set up in the earlier lesson.
+
+02:11.010 --> 02:19.050
+So now it's a matter of determining what key is pressed and updating that element position so selecting
+
+02:19.110 --> 02:24.340
+our element we've got our request animation so it can keep that at the end.
+
+02:24.540 --> 02:32.130
+And now we need to apply some conditions and within our conditions we're going to check to see the value
+
+02:32.220 --> 02:35.670
+of keys so using that key object.
+
+02:35.670 --> 02:41.580
+We've got several option objects there so we've got a key up to selecting the element using the document
+
+02:41.640 --> 02:47.570
+object query selector and we're selecting the element with a class of car seats so that we just created.
+
+02:47.580 --> 02:48.710
+So now that we have it.
+
+02:48.720 --> 02:53.160
+So we need to also add in to our x and y coordinates.
+
+02:53.160 --> 03:00.120
+So taking the player object we're gonna have a value for y going to increment this value with for now
+
+03:00.150 --> 03:02.050
+let's do a value of five.
+
+03:02.160 --> 03:09.120
+And we can also set a value we can set a speed value there and then we can use that speed in order to
+
+03:09.120 --> 03:11.860
+control how fast where element is moving.
+
+03:11.910 --> 03:17.070
+And as we're building it out we're gonna grab the x and y coordinates of this particular object so arrow
+
+03:17.070 --> 03:23.260
+down is going to decrease that arrow left is going to update the player position.
+
+03:23.430 --> 03:25.860
+So decreasing the x coordinates.
+
+03:25.860 --> 03:30.060
+Arrow right is going to increase the x coordinates.
+
+03:30.060 --> 03:34.470
+So we've got a variable that we're tracking in the background that's going to be player X and player
+
+03:34.470 --> 03:34.980
+y.
+
+03:35.130 --> 03:38.280
+And I'll show you how to add that as well into our object.
+
+03:38.850 --> 03:50.280
+And so as we're generating the car we can take our player x value and set it by calculating where the
+
+03:50.310 --> 03:54.240
+car object is and getting its offset position.
+
+03:54.420 --> 04:03.170
+So we can get its offset left position and we need to do that after and then player y value is going
+
+04:03.170 --> 04:09.060
+to be car and we're going to use offset top position and we'll console log.
+
+04:09.150 --> 04:12.660
+The value of players so that we can see what the value here is.
+
+04:12.660 --> 04:17.850
+So when we start the game preset some value you can see that all the way up here that we're setting
+
+04:17.880 --> 04:22.180
+the value of x to two hundred and y two to eighty.
+
+04:22.200 --> 04:27.150
+And this is actually going to correspond with the positioning of this particular element that we know
+
+04:27.210 --> 04:32.250
+which key is being pressed we can adjust the position of that particular element.
+
+04:32.250 --> 04:41.610
+So now it's a matter of taking the car and updating that element style updating its left position to
+
+04:41.610 --> 04:52.680
+be equal to player x plus so that those are always matching and we'll take also player style and top
+
+04:52.680 --> 05:00.810
+position and equal that to player y plus picks and you can also double coat those as well.
+
+05:00.930 --> 05:01.650
+So let's try that out.
+
+05:02.310 --> 05:09.500
+So now when I press my arrows up and down and actually down is moving it up.
+
+05:09.720 --> 05:14.880
+So we need to adjust that that up and down.
+
+05:14.890 --> 05:17.420
+So that was a little bit of an adjustment there.
+
+05:17.440 --> 05:25.450
+So now whenever I press and I can move up arrow down arrow left right I can also move them together
+
+05:25.450 --> 05:31.300
+at the same time and have multiple combinations of movements so that you can create an element that
+
+05:31.360 --> 05:36.190
+moves around on the page depending on what arrows are being pressed.
+
+05:36.190 --> 05:41.390
+So coming up next we need to extend on the gameplay so go ahead and add this into your project.
+
+05:41.470 --> 05:48.580
+Try it for yourself and it's a matter of tracking those positions and then we can update them over here.
+
+05:48.670 --> 05:54.820
+And it's if we need to make some additional updates to these values that's why I kept them separate
+
+05:55.090 --> 06:00.460
+because we could have as well tracked the position current position of car but I usually find doing
+
+06:00.460 --> 06:05.020
+it this way is a little bit more easier and it's a little bit more clear as to what's happening and
+
+06:05.050 --> 06:06.190
+easier to read.
+
+06:06.190 --> 06:11.770
+So that's why I introduced that second variable under player where we're setting that value to wherever
+
+06:11.770 --> 06:16.170
+that particular element is located off the offset left and offset top.
+
+06:16.300 --> 06:20.560
+And then I'm introducing that positioning so that both of those match.
+
+06:20.620 --> 06:26.830
+And we're updating the player X and player y position instead of the car position directly.
+
+06:26.830 --> 06:28.360
+So go ahead and add this into your project.

@@ -1,0 +1,103 @@
+WEBVTT
+
+00:00.210 --> 00:04.510
+We've created a way to end the game but we don't have a great way to restart the game.
+
+00:04.710 --> 00:10.650
+So we see that once we we get the restart content but we're generating a new car and there's quite a
+
+00:10.650 --> 00:15.150
+few things that are happening there that we don't actually need happening within the page.
+
+00:15.150 --> 00:20.220
+And that's because our game area we're generating a bunch of stuff that's already existing.
+
+00:20.220 --> 00:26.460
+So I want to select game area and update the inter H2 Mel and just simply remove out all of the content
+
+00:26.700 --> 00:28.350
+that's been available there.
+
+00:28.350 --> 00:35.790
+I'm also going to be removing out the height of the gameplay as we don't need that anymore because we
+
+00:35.790 --> 00:38.010
+actually do want to see the road in the background.
+
+00:38.010 --> 00:40.430
+So let's try that out and refresh it.
+
+00:40.710 --> 00:43.800
+And when we hit start let's see what happens.
+
+00:43.920 --> 00:49.320
+And now we can hit start again and we're able to start the game once again and we can always restart
+
+00:49.350 --> 00:55.020
+the game because now we're zeroing out what we're building out within the gameplay so we're not adding
+
+00:55.020 --> 01:00.900
+any extra cars and we're not adding to the confusion of what's happening within the gameplay so we need
+
+01:00.900 --> 01:05.500
+it to always clear out and reset it back to its initial state.
+
+01:05.550 --> 01:12.450
+So just quickly go through that and you can see that we're setting that animation frame we're creating
+
+01:12.450 --> 01:13.130
+the car.
+
+01:13.260 --> 01:19.470
+So all of this is being done and it's resetting basically all of the parameters of the game and rebuilding
+
+01:19.470 --> 01:22.400
+all of the elements that we're using within the gameplay.
+
+01:22.470 --> 01:27.750
+So by clearing it out and setting the inter H to Mel to blank that's essentially clearing everything
+
+01:27.750 --> 01:33.510
+out and we already have the player content here so the players start and Player Score is already added
+
+01:33.540 --> 01:34.320
+in there.
+
+01:34.350 --> 01:39.460
+So those are the two parameters that we also need to reset in order to create the gameplay.
+
+01:39.510 --> 01:43.450
+So now that we've generated that we can update some of the styling.
+
+01:43.560 --> 01:46.380
+And coming up next we'll do a final run through.
+
+01:46.380 --> 01:51.780
+And one of the things that I did say that I want to add in is the ability to generate random colors
+
+01:51.780 --> 01:54.090
+for the bad guy cars.
+
+01:54.090 --> 01:57.290
+So let's set that up and I'll show you how to do that.
+
+01:57.450 --> 02:03.360
+And we go into our functions and we need a weight where we're setting it to red.
+
+02:03.360 --> 02:08.890
+We need a way to generate a different color for those cars.
+
+02:09.000 --> 02:10.560
+So I'll show you how to do that.
+
+02:10.560 --> 02:11.720
+And that's just an extra.
+
+02:11.750 --> 02:15.760
+So you don't have to do that all of the gameplay is still there but I'll show you how to do that.
+
+02:15.760 --> 02:19.130
+An upcoming lesson that's a quick bonus less instead of red.
+
+02:19.170 --> 02:20.370
+It'll be random color.

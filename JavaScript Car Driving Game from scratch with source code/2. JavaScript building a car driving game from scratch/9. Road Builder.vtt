@@ -1,0 +1,241 @@
+WEBVTT
+
+00:00.390 --> 00:04.700
+This lesson we're gonna be adding in a road for our car to drive on.
+
+00:04.860 --> 00:12.540
+So I'm updating the default positioning and I'm going to take margin auto so that it automatically centers
+
+00:12.600 --> 00:16.410
+on screen because that's where I want to position the road as well.
+
+00:16.410 --> 00:21.810
+And the road is actually going to be the entire game area that we're using that we constructed earlier
+
+00:22.140 --> 00:28.620
+setting up a background color for it and we'll set up a background color of black.
+
+00:28.620 --> 00:30.950
+And this is the width of the road.
+
+00:30.990 --> 00:36.480
+How about we do 200 pics width and the height of it is going to be 100 percent.
+
+00:36.480 --> 00:44.080
+So going right from the top and bottom will height any of the overflow of that element and we can to
+
+00:44.080 --> 00:49.420
+position it we're positioning it relative and also center it.
+
+00:49.480 --> 00:52.100
+So margin auto will center that road.
+
+00:52.470 --> 00:54.770
+So let's refresh and see what we've got.
+
+00:54.790 --> 00:59.470
+So we've got a car on the road and our car can actually move off of the road.
+
+00:59.590 --> 01:04.520
+So we need to take care of that and handle that that the car is moving off of the road.
+
+01:04.540 --> 01:13.960
+So now we can detect that using our javascript we can detect a bounding box so or we could just call
+
+01:13.960 --> 01:24.530
+this road and equal that to the game area so let's remember the road that we've set up earlier this
+
+01:24.530 --> 01:26.540
+is the game area or the road.
+
+01:26.540 --> 01:30.440
+In other words and taking that road value.
+
+01:30.440 --> 01:33.440
+So we're setting it up and taking game area.
+
+01:33.440 --> 01:41.030
+We use a method called Get bounding client rectangle value and what get bounding client rectangle does
+
+01:41.090 --> 01:47.660
+is it essentially gets the size of an element and its relative position to the viewpoint get bounding
+
+01:47.720 --> 01:55.010
+rectangle value and that's going to return back the top right bottom x y height and width of that particular
+
+01:55.040 --> 01:57.060
+element going into our code.
+
+01:57.080 --> 02:03.350
+When I console log out the value of road you're going to see that this isn't within an object format
+
+02:03.770 --> 02:05.760
+and also going to get rid of that in play.
+
+02:05.870 --> 02:12.890
+So refresh click it and you can see now we're getting the bounding of the road so we know where the
+
+02:13.040 --> 02:15.030
+x and y position is.
+
+02:15.080 --> 02:18.470
+We also know the width of it the height and the top.
+
+02:18.470 --> 02:20.060
+So know quite a bit of information.
+
+02:20.090 --> 02:27.020
+We also know where the right position top left position bottom position and all of this information
+
+02:27.080 --> 02:36.490
+we can then use in order to determine where our boundaries are so we don't actually need it to restrict
+
+02:36.550 --> 02:43.240
+the left movement because the Left movement is going to be located at wherever the position of player
+
+02:43.240 --> 02:43.910
+access.
+
+02:44.020 --> 02:49.590
+And we see that by default if we list out the value of Player X it's going to be zero.
+
+02:49.600 --> 02:55.770
+So we just need to make sure that player x is greater than zero before we try to subtract off of it.
+
+02:55.780 --> 02:58.350
+So try that out and we see that it is zero.
+
+02:58.360 --> 03:01.580
+So now we can't move off of the left side of the road.
+
+03:01.600 --> 03:05.340
+We also want to make sure that we can't move off of the right side of the road.
+
+03:05.440 --> 03:08.580
+So again that player x value and adding it in.
+
+03:08.620 --> 03:15.280
+So whenever we're moving along the horizontal line you see that the player x value is once it hits roughly
+
+03:15.280 --> 03:21.150
+around 145 then that's where we need to stop that from moving over.
+
+03:21.220 --> 03:28.850
+And when we use that bounding box I've got a position there of left position and right position.
+
+03:28.930 --> 03:30.470
+And I also have a width.
+
+03:30.550 --> 03:38.860
+So we want to make sure that the position of X doesn't exceed the width position of the particular road.
+
+03:38.860 --> 03:44.840
+So taking x and making sure that X is less than try that out.
+
+03:44.890 --> 03:50.140
+And now we can move it to the right but we see that we're still moving off to the right and we're going
+
+03:50.140 --> 03:51.640
+all the way to 215.
+
+03:51.730 --> 03:58.200
+So we need to make one quick adjustment and that's calculating out the width of that particular element.
+
+03:58.210 --> 04:02.470
+And we know that we did set a default width so we can just use that 50 picks.
+
+04:02.500 --> 04:07.370
+So minus sing off of that value road minus 5th.
+
+04:07.450 --> 04:12.230
+So that was one quick adjustment adjusting for the width of that particular element.
+
+04:12.280 --> 04:17.630
+And now we see that we can't move off of the side of the road and it actually is a little bit bigger.
+
+04:17.650 --> 04:19.240
+So let's do 60 picks.
+
+04:19.240 --> 04:24.790
+We'll try that out and just make sure that we're not able to move off of the site where instead of road
+
+04:25.210 --> 04:32.290
+X we could do road with minus 50 and that will give us the exact position to the right hand side.
+
+04:32.830 --> 04:38.810
+So we also need to make that for what the apparel and what the downhole arrow is.
+
+04:38.890 --> 04:44.470
+And in this case we want to try to box in the player's movements to a particular area here so we don't
+
+04:44.470 --> 04:46.950
+want them moving all the way up to the top.
+
+04:46.960 --> 04:49.580
+We don't want them moving all the way to the bottom either.
+
+04:49.780 --> 04:51.660
+So we want to restrict some of that.
+
+04:51.670 --> 04:55.960
+So let's take a look at that code and add in some additional values.
+
+04:55.960 --> 05:00.450
+So over here we're incrementing the value of player y.
+
+05:00.730 --> 05:07.720
+So taking the value of player y we want to make sure that the value of player y and going into our rectangle
+
+05:07.750 --> 05:09.410
+are bound rectangle.
+
+05:09.460 --> 05:14.530
+Want to make sure that it's less than the container bottom and we're not going to go underneath the
+
+05:14.530 --> 05:18.040
+bottom and we can do the something else for the top as well.
+
+05:18.040 --> 05:24.340
+So making sure that player Y is greater than and we've got a value for top.
+
+05:24.460 --> 05:25.960
+So let's do that.
+
+05:25.960 --> 05:32.990
+So adding road top value and now we can move to roughly around somewhere close to the top.
+
+05:33.100 --> 05:35.520
+And we don't we can't move to the bottom.
+
+05:35.620 --> 05:37.720
+And if I make this bigger.
+
+05:37.720 --> 05:43.810
+So if we refresh we're still restricted to whatever the current size of that particular bounding area
+
+05:43.840 --> 05:44.630
+is.
+
+05:44.740 --> 05:51.280
+And also it allows us to have some flexibility with our app as long as we're not moving off of the side
+
+05:51.280 --> 05:52.100
+of the road.
+
+05:52.150 --> 05:57.380
+You can see that I'm still bound to those restrictive conditions that we had earlier.
+
+05:57.700 --> 05:59.950
+So go ahead and add this into your application.
+
+05:59.950 --> 06:03.530
+So we've added in a road and next we need to make it look like a road.
+
+06:03.560 --> 06:08.140
+So that's coming up in the next lesson where we're going to build this out and we're going to put lines
+
+06:08.170 --> 06:08.980
+that are going down.
+
+06:08.980 --> 06:13.000
+So that's going to indicate that this is an actual road that's still to come in the upcoming lesson.
