@@ -1,1 +1,0 @@
-# 30hack_hulk
