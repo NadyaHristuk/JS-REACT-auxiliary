@@ -1,0 +1,13 @@
+wrapper>header+main+footer
+
+header
+
+img.logo+nav>ul>li*5>a
+
+main
+
+h1>span^section>article*6>img+h2+p^^section>article*3>img+h2+p+button
+
+footer
+
+footer>p

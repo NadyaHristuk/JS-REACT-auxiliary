@@ -1,0 +1,10 @@
+:root {
+    --box1: red;
+    --box2: blue;
+    --box3: #dba36a;
+    --box4: #65afff;
+    --test: 20px;
+    --var: auto;
+    --mainColor: #fff;
+    --font: Arial, sans-serif;
+}

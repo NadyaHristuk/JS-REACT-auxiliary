@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+}
+
+/*.box {*/
+/*width: 45%;*/
+/*height: 100px;*/
+/*background-color: #000000;*/
+/*margin-bottom: 10px;*/
+/*margin-right: 10px;*/
+/*display: block;*/
+/*}*/
+
+/*.box:nth-child(3n + 9) {*/
+/*background-color: red;*/
+/*}*/
+
+/*.box:nth-last-child(-n + 5) {*/
+/*background-color: blue;*/
+/*}*/
+
+/*.title {*/
+/*text-transform: uppercase;*/
+/*text-align: center;*/
+/*font-size: 50px;*/
+/*margin-bottom: 20px;*/
+/*}*/
+
+/*.title::after {*/
+/*content: '';*/
+/*display: block;*/
+/*width: 150px;*/
+/*height: 10px;*/
+/*background-color: greenyellow;*/
+/*margin: 20px auto 0;*/
+/*}*/
+
+/*.title::before {*/
+/*content: '1';*/
+/*width: 50px;*/
+/*height: 50px;*/
+/*display: inline-block;*/
+/*background-color: red;*/
+/*border-radius: 50%;*/
+/*font-size: 30px;*/
+/*color: #ffffff;*/
+/*line-height: 50px;*/
+/*vertical-align: text-bottom;*/
+/*margin-right: 10px;*/
+/*}*/
+
+/*.title::first-letter {*/
+/*font-size: 100px;*/
+/*color: blue;*/
+/*font-style: italic;*/
+/*}*/
+
+/*.text {*/
+/*font-size: 30px;*/
+/*}*/
+
+/*.text::first-line {*/
+/*color: red;*/
+/*font-weight: bold;*/
+/*}*/
+/*.input {*/
+/*display: inline-block;*/
+/*width: 350px;*/
+/*height: 50px;*/
+/*}*/
+/*.input:focus {*/
+/*background-color: red;*/
+/*color: #FFffff;*/
+/*}*/
+
+/*.input:hover {*/
+/*background-color: yellowgreen;*/
+/*}*/
+
+/*.box {*/
+/*width: 300px;*/
+/*!*height: 300px;*!*/
+/*background-color: greenyellow;*/
+/*}*/
+
+/*.hover-box2 {*/
+/*width: 200px;*/
+/*height: 200px;*/
+/*background-color: red;*/
+/*margin: auto;*/
+/*transition: 10s;*/
+/*}*/
+
+/*.hover-box {*/
+/*width: 200px;*/
+/*height: 200px;*/
+/*background-color: red;*/
+/*margin: auto;*/
+/*transition: 2s;*/
+/*}*/
+
+/*.hover-box:hover {*/
+/*background-color: black;*/
+/*width: 300px;*/
+/*height: 300px;*/
+/*border-radius: 50%;*/
+/*}*/
+
+/*.box:hover > .hover-box {*/
+/*background-color: black;*/
+/*width: 300px;*/
+/*height: 300px;*/
+/*border-radius: 50%;*/
+/*}*/
+
+/*.box:hover > .hover-box2 {*/
+/*background-color: black;*/
+/*width: 300px;*/
+/*height: 300px;*/
+/*border-radius: 50%;*/
+/*}*/
+
+/*.link {*/
+/*font-size: 20px;*/
+/*}*/
+
+/*.text-target {*/
+/*font-size: 40px;*/
+/*transition: 2s;*/
+/*}*/
+
+/*.text-target:target {*/
+/*color: red;*/
+/*font-size: 50px;*/
+/*}*/
+
+/*.list-item:first-child {*/
+/*background-color: red;*/
+/*}*/
+
+/*.list-item:last-child {*/
+/*background-color: darkblue;*/
+/*}*/
+
+/*.list-item:nth-child(2) {*/
+/*background-color: green;*/
+/*}*/
+
+/*.printers {*/
+/*background-color: #edde9c;*/
+/*color: #bc2e1e;*/
+/*text-shadow:*/
+/*0 1px 0px #378ab4,*/
+/*1px 0 0px #5dabcd,*/
+/*1px 2px 1px #378ab4,*/
+/*2px 1px 1px #5dabcd,*/
+/*2px 3px 2px #378ab4,*/
+/*3px 2px 2px #5dabcd,*/
+/*3px 4px 2px #378ab4,*/
+/*4px 3px 3px #5dabcd,*/
+/*4px 5px 3px #378ab4,*/
+/*5px 4px 2px #5dabcd,*/
+/*5px 6px 2px #378ab4,*/
+/*6px 5px 2px #5dabcd,*/
+/*6px 7px 1px #378ab4,*/
+/*7px 6px 1px #5dabcd,*/
+/*7px 8px 0px #378ab4,*/
+/*8px 7px 0px #5dabcd;*/
+/*}*/
+/*body {*/
+/*background:#ccc*/
+/*}*/
+/*.box h3{*/
+/*text-align:center;*/
+/*position:relative;*/
+/*top:80px;*/
+/*}*/
+
+/*.box {*/
+/*width:70%;*/
+/*height:200px;*/
+/*background:#FFF;*/
+/*margin:40px auto;*/
+/*}*/
+
+/*.effect1 {*/
+/*transition: 1s;*/
+/*}*/
+/*.effect1:hover {*/
+/*!*box-shadow: 0 0px 28px 28px #777;*!*/
+/*}*/
+/*.container:hover > .effect1 {*/
+/*width: 200px;*/
+/*border-radius: 50%;*/
+/*transform: rotate(-360deg);*/
+/*background-color: #000;*/
+/*color: #fff;*/
+/*}*/
+/*transition: transition-property transition-duration transition-timing-function transition-delay;*/
+
+/*animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;*/
+
+/*.box3 {*/
+/*width: 100px;*/
+/*height: 100px;*/
+/*margin: auto;*/
+/*!*background-color: green;*!*/
+/*background-image: url(https://media.istockphoto.com/photos/grey-squirrel-yawning-picture-id473012660?k=6&m=473012660&s=612x612&w=0&h=opzkOsCuudeI_l83My-WdfTiru2mpuwZMpVomymwC9c=);*/
+/*background-repeat: no-repeat;*/
+/*-webkit-background-size: cover;*/
+/*background-size: cover;*/
+/*background-position: center;*/
+/*animation: upAndDown 0.8s ease infinite;*/
+/*border-radius: 50%;*/
+/*perspective: 100px;*/
+/*!*box-shadow: 0 0px 28px 28px #777;*!*/
+/*}*/
+
+/*.shad {*/
+/*width: 50px;*/
+/*height: 4px;*/
+/*background-color: rgba(119, 119, 119, 0.5);*/
+/*margin: 50px auto 0;*/
+/*animation: upAndDown 0.8s ease infinite;*/
+/*}*/
+
+/*!*svg.happy .face {*!*/
+/*!*animation: upAndDown 0.8s ease infinite;*!*/
+/*!*}*!*/
+
+/*@keyframes upAndDown {*/
+/*0% {*/
+/*transform: translate(0, -3px) scale(1);*/
+
+/*}*/
+/*10% {*/
+/*transform: translate(10px, -2px) scale(1.1) rotateY(60deg);*/
+/*}*/
+/*!*background-image: url(https://secure.i.telegraph.co.uk/multimedia/archive/03600/potd-squirrels_3600130k.jpg);*!*/
+/*!*}*!*/
+/*20% {*/
+/*transform: translate(20px, -1px)scale(1.2) rotateY(120deg);*/
+/*}*/
+
+/*30% {*/
+/*transform: translate(30px, 0px) scale(1.3) rotateY(180deg);*/
+/*!*background-image: url(http://4.bp.blogspot.com/-cDeYCsNL-ZQ/UozsUJ7EqfI/AAAAAAAAGSk/EtuzOVpHoS0/s1600/andy.png);*!*/
+/*}*/
+/*40% {*/
+/*transform: translate(40px, 1px) scale(1.4) rotateY(240deg);*/
+/*}*/
+/*50% {*/
+/*transform: translate(50px, 2px) scale(1.5) rotateY(300deg);*/
+/*}*/
+/*100% {*/
+/*transform: translate(0, -1px) scale(2) rotateY(360deg);*/
+/*}*/
+/*}*/
+
+body {
+    counter-reset: liCount;
+}
+
+.borch {
+    counter-increment: liCount;
+}
+
+.borch::after {
+    content:'(' counter(liCount, upper-roman) ')';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: deepskyblue;
+    text-align: center;
+    line-height: 20px;
+}

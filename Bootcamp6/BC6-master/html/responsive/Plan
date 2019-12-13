@@ -1,0 +1,21 @@
+Причини використання responsive and adaptive
+viewport
+Main rules
+width в %
+target/context * 100 = result
+min и max width для клнтейнерів
+margin в %
+padding rem
+Media Queries
+Синтаксис запису
+Device Orientation
+@media screen and (orientation: landscape) {...}
+@media screen and (orientation: portrait) {...}
+Pixel Ratio
+@media (device-pixel-ratio: 2)
+min-width vs max-width
+Mobile-first v s Desktop-first
+Кілька правил
+
+
+

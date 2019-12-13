@@ -1,0 +1,236 @@
+@import "variable.css";
+/*@import "header.css";*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--font);
+}
+.fa-shopping-cart {
+    font-size: 100px;
+    color: brown;
+}
+
+.title {
+    font-size: 50px;
+    color: var(--mainColor);
+}
+.text {
+    font-size:14px;
+    color: var(--mainColor);
+    font-family: var(--font);
+}
+
+.text-bold {
+    font-size: var(--test);
+    color: var(--mainColor);
+    font-family: var(--font);
+    font-weight: 700;
+}
+
+.text-italic {
+    font-size: 25px;
+    color: var(--mainColor);
+    font-family: var(--font);
+    font-style: italic;
+}
+/*h1 {*/
+    /*text-align: center;*/
+    /*background-color: #456fa0;*/
+    /*padding: 20px 10px;*/
+    /*color: #fff;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+.boxes {
+    width: 100%;
+    text-align: center;
+    background-color: #d3e0e3;
+    /*padding: 20px;*/
+    /*position: relative;*/
+}
+
+.box {
+    font-weight: bold;
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 2.4em;
+    color: var(--mainColor);
+}
+
+.box1 {
+    background-color: var(--box1);
+    /*position: relative;*/
+    /*top: 150px;*/
+    /*left: 50px;*/
+    /*move box1 from top-left corner his default position*/
+    /*padding: 80px;*/
+}
+
+.box2 {
+    background-color: var(--box2);
+    /*position: absolute;*/
+
+    /*position: static; default value*/
+
+    /*position: fixed;*/
+    /*bottom: 50%;*/
+    /*right: 25%;*/
+    /*fixed position no mater what do*/
+    /*position: relative;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*transition: 2s;*/
+    z-index: 5;
+    /*position: relative;*/
+
+}
+
+/*.box2:hover {*/
+    /*top:50px;*/
+    /*left: 100px;*/
+/*}*/
+
+    .box3 {
+    background-color: var(--box3);
+    /*position: fixed;*/
+    /*top: 10px;*/
+    /*left: 60px;*/
+    /*move box3 from first not static position div or start browser window*/
+        /*z-index: 2;*/
+        /*position: absolute;*/
+}
+
+.box4 {
+    background-color: var(--box4);
+}
+    /*position: absolute;*/
+
+.box5 {
+    background-color: var(--box1);
+    /*position: absolute;*/
+}
+
+.longbox {
+    width: 100%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    background-color: red;
+    height: 1000px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+
+}
+    /*center absolute*/
+/*.center-box {*/
+    /*width: 500px;*/
+    /*background-color: yellow;*/
+    /*margin-bottom: 20px;*/
+
+/*}*/
+.center-box:last-child {
+    margin-bottom: 0;
+}
+
+/*.center {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+/*}*/
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    color: #fff;
+}
+
+
+.menu-item {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-item:hover, .sub-item-menu:hover, .final-item-menu:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.sub-menu {
+    /*display: none;*/
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.sub-item-menu {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 0px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sub-item-menu:last-child {
+    margin-bottom: 0;
+}
+
+.menu-item:hover > .sub-menu {
+    /*display: block;*/
+    opacity: 1;
+}
+
+.menu-item:hover .sub-item-menu {
+    font-size: 18px;
+}
+
+.final-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0;
+    /*height: 100%;*/
+}
+
+.final-item-menu {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.sub-item-menu:hover > .final-menu {
+    display: block;
+}
