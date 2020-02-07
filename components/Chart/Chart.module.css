@@ -1,0 +1,14 @@
+.diagramWrap{
+	padding-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+@media (min-width: 1280px) {
+	.diagramWrap{
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+	}
+
+}

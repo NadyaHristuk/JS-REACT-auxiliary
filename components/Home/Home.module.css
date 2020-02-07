@@ -1,0 +1,384 @@
+.addTransaction {
+  text-align: center;
+  padding: 3rem 0;
+  font-family: "HelveticaNeueCyr-Medium";
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: none;
+    position: relative;
+    padding-bottom: 85px;
+  }
+
+  .btnsBlock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+
+  .btn {
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #619361;
+    font-size: 15px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btnLeft {
+    margin-right: 6px;
+  }
+
+
+
+  .btn:hover {
+    background: linear-gradient(to right, #fdc830, #feb21c, #fd9c09, #fc8402, #f96b07);
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .mainRow {
+    display: none;
+  }
+
+  .contentRows {
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+    border-left: 8px solid transparent;
+    background-color: #fff;
+  }
+
+  .contentRowsSilver {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+    border-left: 8px solid transparent;
+    background-color: #f3f6f6;
+  }
+
+
+  .contentRows:last-of-type {
+    margin: 0;
+  }
+
+  .contentRowsSilver:last-of-type {
+    margin: 0;
+  }
+
+  .colorRegularIncome {
+    border-left: 8px solid rgb(236, 178, 42);
+  }
+
+  .colorIrregularIncome {
+    border-left: 8px solid rgb(226, 139, 32);
+  }
+
+  .colorFood {
+    border-left: 8px solid rgb(210, 89, 37);
+  }
+
+  .colorCar {
+    border-left: 8px solid rgb(103, 183, 208);
+  }
+
+  .colorMainExpenses {
+    border-left: 8px solid rgb(85, 147, 215);
+  }
+
+  .colorEntertainment {
+    border-left: 8px solid rgb(255, 171, 0);
+  }
+
+  .colorSelfCare {
+    border-left: 8px solid rgb(156, 194, 84);
+  }
+
+  .colorChildCare {
+    border-left: 8px solid rgb(115, 173, 87);
+  }
+
+  .colorHouseholdProducts {
+    border-left: 8px solid rgb(185, 199, 177);
+  }
+
+  .colorEducation {
+    border-left: 8px solid rgb(217, 165, 170);
+  }
+
+  .colorOtherExpenses {
+    border-left: 8px solid rgb(100, 84, 40);
+  }
+
+  .firstColContent {
+    width: 100%;
+    padding: 10px 10px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mobileContent {
+    color: #6b7d83;
+    font-size: 10px;
+  }
+
+  .amountPlus {
+    color: #75c16e;
+  }
+
+  .amountMinus {
+    color: #ff6c00;
+  }
+
+  .mobileTh {
+    display: block;
+    padding: 0;
+    color: #000;
+  }
+
+  .mobileThRight {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobileContent {
+    padding: 0px;
+    width: 50%;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+  }
+
+  .noMobile {
+    display: none;
+  }
+
+  .firstColContentForMobile {
+    padding: 0 0 2px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    width: 100%;
+    box-shadow: 20px 20px 60px 0px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    padding: 0 33px;
+  }
+
+  .btnsBlock {
+    background-color: #516d57;
+    padding: 23px 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #619361;
+    font-size: 15px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btnLeft {
+    margin-right: 28px;
+  }
+
+  .btn:hover {
+    background: linear-gradient(to right, #fdc830, #feb21c, #fd9c09, #fc8402, #f96b07);
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .firstColContentForMobile {
+    display: none;
+  }
+
+
+  .mainRow {
+    width: 100%;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: bold;
+    background-color: #f3f6f6;
+    display: flex;
+    padding: 0px 20px;
+  }
+
+  .contentRows {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    display: flex;
+    padding: 0px 20px;
+  }
+
+  .contentRowsSilver {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    display: flex;
+    background-color: #f3f6f6;
+    padding: 0px 20px;
+  }
+
+
+
+  .firstCol,
+  .firstColContent {
+    padding: 27px 0 25px 0;
+    width: 14%;
+  }
+
+  .typeCol,
+  .categoryCol,
+  .commentCol,
+  .amountCol,
+  .lastCol,
+  .typeColContent,
+  .categoryColContent,
+  .commentColContent,
+  .amountColContent,
+  .lastColContent {
+    padding: 27px 0 25px 0;
+  }
+
+  .typeCol,
+  .typeColContent {
+    width: 12%;
+  }
+
+  .categoryCol,
+  .categoryColContent {
+    width: 21%;
+  }
+
+  .commentCol,
+  .commentColContent {
+    width: 24%;
+    padding-left: 20px;
+  }
+
+  .amountCol,
+  .amountColContent {
+    width: 17%;
+  }
+
+  .lastCol,
+  .lastColContent {
+    width: 17%;
+  }
+
+  .mobileTh {
+    display: none;
+  }
+
+  .amountPlus {
+    color: #75c16e;
+  }
+
+  .amountMinus {
+    color: #ff6c00;
+  }
+
+
+  .amountCol,
+  .amountColContent {
+    text-align: center;
+  }
+
+  .lastCol,
+  .lastColContent {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    padding: 0;
+    max-width: 1280px;
+  }
+
+  .tableScroll {
+    height: 55vh;
+    overflow-y: auto;
+  }
+
+  .firstCol,
+  .firstColContent {
+    padding: 27px 0 25px 0;
+    width: 15%;
+  }
+
+  .typeCol,
+  .typeColContent {
+    width: 13%;
+  }
+
+  .categoryCol,
+  .categoryColContent {
+    width: 21%;
+  }
+
+  .commentCol,
+  .commentColContent {
+    width: 22%;
+    padding-left: 20px;
+  }
+
+  .amountCol,
+  .amountColContent {
+    width: 17%;
+  }
+
+  .lastCol,
+  .lastColContent {
+    width: 17%;
+  }
+}

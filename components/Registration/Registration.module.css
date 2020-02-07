@@ -1,0 +1,259 @@
+.container {
+  font-family: 'HelveticaNeueCyr';
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.titleWrapper {
+  display: flex;
+}
+
+.form {
+  width: 550px;
+  padding: 1.375rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 34px;
+  height: 26px;
+}
+
+.inputWithIcon {
+  position: relative;
+  margin-bottom: 0.875rem;
+}
+
+.inputEmail,
+.inputPass,
+.inputConfirmPass,
+.inputName {
+  width: 100%;
+  position: relative;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-left: 3.635rem;
+  outline: none;
+  line-height: 2;
+  border-radius: 0.3125rem;
+  border: none;
+  background-color: rgb(249, 251, 251);
+}
+
+.iconEmail::before,
+.iconPass::before,
+.iconName::before {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+
+.inputEmail::placeholder,
+.inputPass::placeholder,
+.inputConfirmPass::placeholder,
+.inputName::placeholder {
+  color: #b9c9d4;
+}
+
+.iconEmail::before {
+  content: url('../../assets/images/email.svg');
+}
+
+.iconPass::before {
+  content: url('../../assets/images/lock.svg');
+}
+
+.iconName::before {
+  content: url('../../assets/images/user-account-box.svg');
+}
+
+.formTitle {
+  margin-bottom: 27px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgb(44, 53, 62);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.submitBtn {
+  margin-bottom: 1.25rem;
+  border-radius: 6px;
+  background-image: linear-gradient(0deg,
+    rgb(117, 193, 110) 0%,
+    rgba(81, 109, 87, 0.70196) 100%);
+  box-shadow: 0px 3px 3px 0px rgba(92, 135, 94, 0.2);
+  min-width: 275px;
+  min-height: 48px;
+  border: none;
+  font-size: 0.94rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 2;
+  cursor: pointer;
+}
+
+
+.lineStatus,
+.halfLine,
+.fullLine {
+  height: 4px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 3px 0px rgba(97, 147, 97, 0.2);
+  margin-bottom: 0.875rem;
+}
+
+.lineStatus {
+  background-color: #dfe9df;
+}
+
+.halfLine {
+  background: linear-gradient(to right, #619361 50%, #dfe9df 50%);
+}
+
+.fullLine {
+  background: linear-gradient(to right, #619361 50%, #619361 50%);
+  border: 1px solid grey;
+
+}
+
+.submitBtn:focus {
+  outline: none
+}
+
+.loginLink {
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgb(107, 125, 131);
+  line-height: 2.5;
+}
+
+.successMsg {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: rgb(67, 196, 78);
+  margin-top: 1rem;
+}
+
+.errorMsg {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: rgb(202, 73, 21);
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .formWrapper {
+    width: 100%;
+    flex-direction: column;
+    background: url('../../assets/images/registration/mock-up.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .form {
+    padding: 2.5rem 3.75rem;
+    box-shadow: 10px 17.321px 40px 0px rgba(107, 125, 131, 0.3);
+  }
+
+  .slogan {
+    width: 45%;
+    position: absolute;
+    bottom: 40px;
+    font-size: 1.125rem;
+    color: rgb(40, 40, 40);
+    line-height: 2.5;
+    text-align: center;
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .formWrapper {
+    width: 50%;
+    background: url('../../assets/images/waves-chart-bg.svg') no-repeat bottom -169px right -372px,
+      url('../../assets/images/waves-chart-bg.svg') no-repeat bottom -169px left -726px,
+      url('../../assets/images/background.jpg');
+    background-size: auto 541px, auto 541px, auto;
+  }
+
+  .form {
+    width: 80%;
+    max-width: 550px;
+  }
+
+  .formTitle {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    text-align: left;
+  }
+
+  .bgWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    background: url('../../assets/images/registration/iPhone6.png') no-repeat 86% center,
+      url('../../assets/images/registration/BackgroundRegister.jpg') no-repeat center;
+    background-size: 41%, cover;
+  }
+
+  .submitBtn {
+    background-image: linear-gradient(90deg, rgb(236, 178, 42) 0%, rgba(255, 108, 0, 1) 100%);
+    box-shadow: 0px 3px 3px 0px rgba(255, 108, 0, 0.2);
+  }
+
+  .slogan {
+    text-align: left;
+    font-size: 2.18rem;
+    line-height: 1.286;
+    font-weight: bold;
+    position: static;
+    color: rgb(255, 255, 255);
+    padding: 0.3125rem;
+  }
+
+  .logo {
+    margin-right: 10px;
+  }
+
+  .logoWrap {
+    margin-bottom: 40px;
+    margin-left: 4%;
+    justify-content: flex-start;
+  }
+}
