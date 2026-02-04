@@ -16,7 +16,7 @@
     "express": "^4.16.3",
     "jsonwebtoken": "^8.3.0",
     "moment": "^2.22.2",
-    "mongoose": ">=6.13.6",
+    "mongoose": ">=6.13.5",
     "nodemon": "^1.18.2",
     "react-tooltip": "^3.6.1"
   },
